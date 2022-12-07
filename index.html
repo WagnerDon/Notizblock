@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O.N.</title>
+    <link rel="icon" href="img/favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body onload="init()">
+    <div id="header" class="header padding20">
+        <div class="header-sides">
+            <input id="title" type="text" placeholder="Title" onclick="renderTextfield()">
+        </div>
+
+        <div class="header-middle">
+            <img onclick="addNote()" class="keep" src="img/favicon.png" alt="img">
+            <h1>Online Notes</h1>
+        </div>
+
+        <div class="header-sides">
+            <button class="header-outer display-none" id="q" onclick="renderContent()">
+                <img class="icons" id="iconNote" src="img/note.png" alt="note">
+            </button>
+
+            <button class="header-outer display-none" id="w" onclick="renderDustbin()">
+                <img class="icons" id="iconDustbin" src="img/dustbin.png" alt="dustbin">
+            </button>
+
+            <div class="header-outer" id="e"></div>
+
+            <div class="header-outer" id="r"></div>
+
+            <button class="header-outer" onclick="menu()">
+                <img class="icons" id="iconOption" src="img/option.png" alt="menu">
+            </button>
+        </div>
+    </div>
+
+    <div class="padding20 background" id="background">
+        <div id="content"></div>
+    </div>
+
+    <button class="header-outer fixed" onclick="light()">
+        <img id="iconBulb" class="icons" src="img/bulb.png" alt="bulb">
+    </button>
+</body>
+
+</html>
